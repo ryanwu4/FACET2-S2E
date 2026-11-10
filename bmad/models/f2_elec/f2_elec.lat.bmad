@@ -64,7 +64,8 @@ patch_bc20: patch, superimpose, ref=begbc20
 ! Cavity wakefields, traveling wave, full sbend
 lcavity::L0*[sr_wake]   = call::$FACET2_LATTICE/bmad/wakefields/longitudinal_wakes_sband.bmad
 lcavity::K*[sr_wake]    = call::$FACET2_LATTICE/bmad/wakefields/longitudinal_wakes_sband.bmad
-lcavity::L1X*[sr_wake]  = call::$FACET2_LATTICE/bmad/wakefields/longitudinal_wakes_xband.bmad
+! L1XF (X-band linearizer, zero voltage) is not installed on the machine (F2_live_model: "L1XF doesn't exist"): no wake
+! lcavity::L1X*[sr_wake]  = call::$FACET2_LATTICE/bmad/wakefields/longitudinal_wakes_xband.bmad
 lcavity::*[cavity_type] = traveling_wave
 sbend::*[fringe_type] = full
 
