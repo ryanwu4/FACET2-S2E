@@ -1,6 +1,6 @@
 &tao_start
   n_universes = 1
-  plot_file   ='$FACET2_LATTICE/bmad/tao/tao_plot.init '
+!  plot_file   ='$FACET2_LATTICE/bmad/tao/tao_plot.init '
   startup_file='$FACET2_LATTICE/bmad/tao/tao.startup'
 /
 
@@ -72,131 +72,131 @@ beam_init%center(6) = 0.0
 
 
 
-&tao_d2_data
-        d2_data%name = 'L0AF'
-        universe = 1
-        n_d1_data = 1
-/
+!&tao_d2_data
+!        d2_data%name = 'L0AF'
+!        universe = 1
+!        n_d1_data = 1
+!/
 
-&tao_d1_data
-        ix_d1_data = 1
-        default_weight = 1
-        d1_data%name = 'endtwiss'
-        datum( 1) =  'beta.a'     '' '' 'L0AFEND'   'target'  33   1e1     ! Estimate of best beam from Impact-T
-        datum( 2) =  'alpha.a'    '' '' 'L0AFEND'   'target'  -7    1e2
-        datum( 3) =  'beta.b'     '' '' 'L0AFEND'   'target'  33      1e1
-        datum( 4) =  'alpha.b'    '' '' 'L0AFEND'   'target' -7     1e2
-        datum( 5) =  'eta.x'      '' '' 'L0AFEND'   'target' 0      1e1
-        datum( 6) =  'etap.x'     '' '' 'L0AFEND'   'target' 0      1e2
-/  
-
-
-
-&tao_d2_data
-        d2_data%name = 'MRK0F'
-        universe = 1
-        n_d1_data = 1
-/
-
-&tao_d1_data
-        ix_d1_data = 1
-        default_weight = 1
-        d1_data%name = 'begtwiss'
-        datum( 1) =  'beta.a'     '' '' 'MRK0F'   'target'  5.286   1e1
-        datum( 2) =  'alpha.a'    '' '' 'MRK0F'   'target'  -2.039 1e2
-        datum( 3) =  'beta.b'     '' '' 'MRK0F'   'target'  2.582     1e1
-        datum( 4) =  'alpha.b'    '' '' 'MRK0F'   'target'  0.052  1e2
-        datum( 5) =  'eta.x'      '' '' 'MRK0F'   'target'   0  1e1
-        datum( 6) =  'etap.x'     '' '' 'MRK0F'   'target'   0   1e2
-/ 
+!&tao_d1_data
+!        ix_d1_data = 1
+!        default_weight = 1
+!        d1_data%name = 'endtwiss'
+!        datum( 1) =  'beta.a'     '' '' 'L0AFEND'   'target'  33   1e1     ! Estimate of best beam from Impact-T
+!        datum( 2) =  'alpha.a'    '' '' 'L0AFEND'   'target'  -7    1e2
+!        datum( 3) =  'beta.b'     '' '' 'L0AFEND'   'target'  33      1e1
+!        datum( 4) =  'alpha.b'    '' '' 'L0AFEND'   'target' -7     1e2
+!        datum( 5) =  'eta.x'      '' '' 'L0AFEND'   'target' 0      1e1
+!        datum( 6) =  'etap.x'     '' '' 'L0AFEND'   'target' 0      1e2
+!/  
 
 
-&tao_d2_data
-        d2_data%name = 'BC11C'
-        universe = 1
-        n_d1_data = 4
-/
-&tao_d1_data
-        ix_d1_data = 1
-        default_weight = 1
-        d1_data%name = 'endtwiss'
-        datum( 1) =  'beta.a'     '' '' 'BC11CEND'   'target'  3.0   1e1
-        datum( 2) =  'alpha.a'    '' '' 'BC11CEND'   'target' 0      1e2
-        datum( 3) =  'beta.b'     '' '' 'BC11CEND'   'target' 3.0      1e1
-        datum( 4) =  'alpha.b'    '' '' 'BC11CEND'   'target'  0    1e2
-        datum( 5) =  'eta.x'      '' '' 'BC11CEND'   'target'   0  1e1
-        datum( 6) =  'etap.x'     '' '' 'BC11CEND'   'target'   0   1e2
-/
-&tao_d1_data
-    ix_d1_data = 2
-    d1_data%name = 'betas'
-    datum( 1) =  'beta.a'     '' 'QM10771' 'BC11CEND'   'max'   35   1e1
-    datum( 2) =  'beta.b'     '' 'QM10771' 'BC11CEND'   'max'   35   1e1
-/
- &tao_d1_data
-        ix_d1_data = 3
-        default_weight = 1
-        d1_data%name = 'offset'
-        datum( 1) =  'rel_floor.x'     'BC11CBEG' '' 'CE11345'   'target' 0     1e1
-   
- / 
- &tao_d1_data
-        ix_d1_data = 4
-        default_weight = 1
-        d1_data%name = 'r56'
-        datum( 1) =  'r56_compaction'        'BC11CBEG'  '' 'BC11CEND'   'target'  0   
-/ 
+
+!&tao_d2_data
+!        d2_data%name = 'MRK0F'
+!        universe = 1
+!        n_d1_data = 1
+!/
+
+!&tao_d1_data
+!        ix_d1_data = 1
+!        default_weight = 1
+!        d1_data%name = 'begtwiss'
+!        datum( 1) =  'beta.a'     '' '' 'MRK0F'   'target'  5.286   1e1
+!        datum( 2) =  'alpha.a'    '' '' 'MRK0F'   'target'  -2.039 1e2
+!        datum( 3) =  'beta.b'     '' '' 'MRK0F'   'target'  2.582     1e1
+!        datum( 4) =  'alpha.b'    '' '' 'MRK0F'   'target'  0.052  1e2
+!        datum( 5) =  'eta.x'      '' '' 'MRK0F'   'target'   0  1e1
+!        datum( 6) =  'etap.x'     '' '' 'MRK0F'   'target'   0   1e2
+!/ 
+
+
+!&tao_d2_data
+!        d2_data%name = 'BC11C'
+!        universe = 1
+!        n_d1_data = 4
+!/
+!&tao_d1_data
+!        ix_d1_data = 1
+!        default_weight = 1
+!        d1_data%name = 'endtwiss'
+!        datum( 1) =  'beta.a'     '' '' 'BC11CEND'   'target'  3.0   1e1
+!        datum( 2) =  'alpha.a'    '' '' 'BC11CEND'   'target' 0      1e2
+!        datum( 3) =  'beta.b'     '' '' 'BC11CEND'   'target' 3.0      1e1
+!        datum( 4) =  'alpha.b'    '' '' 'BC11CEND'   'target'  0    1e2
+!        datum( 5) =  'eta.x'      '' '' 'BC11CEND'   'target'   0  1e1
+!        datum( 6) =  'etap.x'     '' '' 'BC11CEND'   'target'   0   1e2
+!/
+!&tao_d1_data
+!    ix_d1_data = 2
+!    d1_data%name = 'betas'
+!    datum( 1) =  'beta.a'     '' 'QM10771' 'BC11CEND'   'max'   35   1e1
+!    datum( 2) =  'beta.b'     '' 'QM10771' 'BC11CEND'   'max'   35   1e1
+!/
+! &tao_d1_data
+!        ix_d1_data = 3
+!        default_weight = 1
+!        d1_data%name = 'offset'
+!        datum( 1) =  'rel_floor.x'     'BC11CBEG' '' 'CE11345'   'target' 0     1e1
+!   
+! / 
+! &tao_d1_data
+!        ix_d1_data = 4
+!        default_weight = 1
+!        d1_data%name = 'r56'
+!        datum( 1) =  'r56_compaction'        'BC11CBEG'  '' 'BC11CEND'   'target'  0   
+!/ 
 
  
 
-&tao_d2_data
-        d2_data%name = 'BC14E'
-        universe = 1
-        n_d1_data = 3
-/
-&tao_d1_data
-        ix_d1_data = 1
-        default_weight = 1
-        d1_data%name = 'endtwiss'
-        datum( 1) =  'beta.a'     '' '' 'ENDBC14E'   'target' 10   1e1
-        datum( 2) =  'alpha.a'    '' '' 'ENDBC14E'   'target' 0 1e2
-        datum( 3) =  'beta.b'     '' '' 'ENDBC14E'   'target' 10     1e1
-        datum( 4) =  'alpha.b'    '' '' 'ENDBC14E'   'target' 0  1e2
-        datum( 5) =  'eta.x'      '' '' 'ENDBC14E'   'target'   0  1e1
-        datum( 6) =  'etap.x'     '' '' 'ENDBC14E'   'target'   0   1e2
-/
-&tao_d1_data
-        ix_d1_data = 2
-        default_weight = 1
-        d1_data%name = 'energy'
-        datum( 1) =  'e_tot_ref'           '' '' 'BEGBC14E'   'target'  0   
-        datum( 2) =  'e_tot_ref'           '' '' 'ENDBC14E'   'target'  0   
-        datum( 3) =  'orbit.e_tot'     '' '' 'BEGBC14E'   'target'  0   
-        datum( 4) =  'orbit.e_tot'     '' '' 'ENDBC14E'   'target'  0   
- / 
- &tao_d1_data
-        ix_d1_data = 3
-        default_weight = 1
-        d1_data%name = 'offset'
-        datum( 1) =  'rel_floor.x'     'BEGBC14E' '' 'BPM14801'   'target' 0     1e1
-   
- / 
+!&tao_d2_data
+!        d2_data%name = 'BC14E'
+!        universe = 1
+!        n_d1_data = 3
+!/
+!&tao_d1_data
+!        ix_d1_data = 1
+!        default_weight = 1
+!        d1_data%name = 'endtwiss'
+!        datum( 1) =  'beta.a'     '' '' 'ENDBC14E'   'target' 10   1e1
+!        datum( 2) =  'alpha.a'    '' '' 'ENDBC14E'   'target' 0 1e2
+!        datum( 3) =  'beta.b'     '' '' 'ENDBC14E'   'target' 10     1e1
+!        datum( 4) =  'alpha.b'    '' '' 'ENDBC14E'   'target' 0  1e2
+!        datum( 5) =  'eta.x'      '' '' 'ENDBC14E'   'target'   0  1e1
+!        datum( 6) =  'etap.x'     '' '' 'ENDBC14E'   'target'   0   1e2
+!/
+!&tao_d1_data
+!        ix_d1_data = 2
+!        default_weight = 1
+!        d1_data%name = 'energy'
+!        datum( 1) =  'e_tot_ref'           '' '' 'BEGBC14E'   'target'  0   
+!        datum( 2) =  'e_tot_ref'           '' '' 'ENDBC14E'   'target'  0   
+!        datum( 3) =  'orbit.e_tot'     '' '' 'BEGBC14E'   'target'  0   
+!        datum( 4) =  'orbit.e_tot'     '' '' 'ENDBC14E'   'target'  0   
+! / 
+! &tao_d1_data
+!        ix_d1_data = 3
+!        default_weight = 1
+!        d1_data%name = 'offset'
+!        datum( 1) =  'rel_floor.x'     'BEGBC14E' '' 'BPM14801'   'target' 0     1e1
+!   
+! / 
 
 
-&tao_d2_data
-        d2_data%name = 'L3'
-        universe = 1
-        n_d1_data = 1
-/
-&tao_d1_data
-        ix_d1_data = 1
-        default_weight = 1
-        d1_data%name = 'energy'
-        datum( 1) =  'e_tot_ref'           '' '' 'BEGL3F_1'   'target'  0   
-        datum( 2) =  'e_tot_ref'           '' '' 'ENDL3F_2'   'target'  0   
-        datum( 3) =  'orbit.e_tot'     '' '' 'BEGL3F_1'   'target'  0   
-        datum( 4) =  'orbit.e_tot'     '' '' 'ENDL3F_2'   'target'  0   
- / 
+!&tao_d2_data
+!        d2_data%name = 'L3'
+!        universe = 1
+!        n_d1_data = 1
+!/
+!&tao_d1_data
+!        ix_d1_data = 1
+!        default_weight = 1
+!        d1_data%name = 'energy'
+!        datum( 1) =  'e_tot_ref'           '' '' 'BEGL3F_1'   'target'  0   
+!        datum( 2) =  'e_tot_ref'           '' '' 'ENDL3F_2'   'target'  0   
+!        datum( 3) =  'orbit.e_tot'     '' '' 'BEGL3F_1'   'target'  0   
+!        datum( 4) =  'orbit.e_tot'     '' '' 'ENDL3F_2'   'target'  0   
+! / 
 
   
 
@@ -220,56 +220,56 @@ beam_init%center(6) = 0.0
 !----------------------------------------
 ! Orbit 
 
-&tao_d2_data
-    d2_data%name = "orbit"
-    universe = 1
-    n_d1_data = 5
-/
+!&tao_d2_data
+!    d2_data%name = "orbit"
+!    universe = 1
+!    n_d1_data = 5
+!/
 
-&tao_d1_data
-    ix_d1_data = 1
-    default_weight = 1
-    d1_data%name = 'x'
-    default_data_type = 'bpm_orbit.x'
-    default_data_source = 'lat'
-    search_for_lat_eles = "MONITOR::BPM*,MONITOR::RFB*"
-/
+!&tao_d1_data
+!    ix_d1_data = 1
+!    default_weight = 1
+!    d1_data%name = 'x'
+!    default_data_type = 'bpm_orbit.x'
+!    default_data_source = 'lat'
+!    search_for_lat_eles = "MONITOR::BPM*,MONITOR::RFB*"
+!/
 
-&tao_d1_data
-    ix_d1_data = 2
-    default_weight = 1
-    d1_data%name = 'y'
-    default_data_type = 'bpm_orbit.y'
-    default_data_source = 'lat'
-    search_for_lat_eles = "MONITOR::BPM*,MONITOR::RFB*"
-/
+!&tao_d1_data
+!    ix_d1_data = 2
+!    default_weight = 1
+!    d1_data%name = 'y'
+!    default_data_type = 'bpm_orbit.y'
+!    default_data_source = 'lat'
+!    search_for_lat_eles = "MONITOR::BPM*,MONITOR::RFB*"
+!/
 
-&tao_d1_data
-    ix_d1_data = 3
-    default_weight = 1
-    d1_data%name = 'profx'
-    default_data_type = 'orbit.x'
-    default_data_source = 'lat'
-    search_for_lat_eles = "MONITOR::YAG*,MONITOR::OTR*"
-/
+!&tao_d1_data
+!    ix_d1_data = 3
+!    default_weight = 1
+!    d1_data%name = 'profx'
+!    default_data_type = 'orbit.x'
+!    default_data_source = 'lat'
+!    search_for_lat_eles = "MONITOR::YAG*,MONITOR::OTR*"
+!/
 
-&tao_d1_data
-    ix_d1_data = 4
-    default_weight = 1
-    d1_data%name = 'profy'
-    default_data_type = 'orbit.y'
-    default_data_source = 'lat'
-    search_for_lat_eles = "MONITOR::YAG*,MONITOR::OTR*"
-/
+!&tao_d1_data
+!    ix_d1_data = 4
+!    default_weight = 1
+!    d1_data%name = 'profy'
+!    default_data_type = 'orbit.y'
+!    default_data_source = 'lat'
+!    search_for_lat_eles = "MONITOR::YAG*,MONITOR::OTR*"
+!/
 
-&tao_d1_data
-    ix_d1_data = 5
-    default_weight = 1
-    d1_data%name = 'e'
-    default_data_type = 'orbit.e_tot'
-    default_data_source = 'lat'
-    search_for_lat_eles = "MONITOR::BPM*,MONITOR::RFB*"
-/
+!&tao_d1_data
+!    ix_d1_data = 5
+!    default_weight = 1
+!    d1_data%name = 'e'
+!    default_data_type = 'orbit.e_tot'
+!    default_data_source = 'lat'
+!    search_for_lat_eles = "MONITOR::BPM*,MONITOR::RFB*"
+!/
 
 
 
